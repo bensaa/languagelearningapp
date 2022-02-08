@@ -180,23 +180,23 @@ class Playgame extends React.Component {
     render() {
 		var questionarea = <p>There is no words to ask.</p>
 		if(this.state.words.length > 0){
-			questionarea = 												<div>
-																			<button onClick={this.toggleLanguage}>english&lt;&gt;finnish</button>
-																			<p id="wordgamewordone">{this.state.modeansweringfor == 'finnish'?
-																									 this.state.words[this.state.windex].english:
-																									 this.state.words[this.state.windex].finnish}</p>
-																			<form onSubmit={this.handleSubmit}>
-																				<input style={{color: this.state.answersucceed? 'black':'red'}}
-																					   type="text" 
-																					   value={this.state.infieldvalue}
-																					   onChange={(e) => this.setName(e.target.value)}/>
-																				<button type="submit">Answer</button>
-																			</form>
-																			<div>
-																				<p style={{color: 'green', fontSize: '32px'}}>{this.state.rightanswer}</p>
-																			</div>
-																			<button onClick={this.resetWords}>Reset words</button>
-																		</div>
+			questionarea = <div>
+							   <button onClick={this.toggleLanguage}>english&lt;&gt;finnish</button>
+							   <p id="wordgamewordone">{this.state.modeansweringfor == 'finnish'?
+														this.state.words[this.state.windex].english:
+														this.state.words[this.state.windex].finnish}</p>
+							   <form onSubmit={this.handleSubmit}>
+								   <input style={{color: this.state.answersucceed? 'black':'red'}}
+										  type="text" 
+										  value={this.state.infieldvalue}
+										  onChange={(e) => this.setName(e.target.value)}/>
+								   <button type="submit">Answer</button>
+							   </form>
+							   <div>
+								   <p style={{color: 'green', fontSize: '32px'}}>{this.state.rightanswer}</p>
+							   </div>
+							   <button onClick={this.resetWords}>Reset words</button>
+						   </div>
 		}
 		return (
 			<div>
