@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 #inputfield {
@@ -23,11 +23,11 @@
 }
 
 .dropbutton {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+	background-color: #04AA6D;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
 }
 
 .topbarbutton:hover .dropbutton {background-color: #209041;}
