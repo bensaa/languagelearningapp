@@ -1,8 +1,8 @@
-#Language learning application
+# Language learning application
 
 Tehty nodella ja reactilla.
 
-##Toiminta
+## Toiminta
 Playgame-välilehti:
 -Kyselee sanoja enlanniksi tai suomeksi.
 -Mahdollista vaihtaa tarvittavien oikeiden vastauksien määrää jolla sana tulee suoritetuksi, eli poistetaan kysyttävien listalta.
